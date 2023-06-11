@@ -1,0 +1,13 @@
+__pycache__
+*.o
+*.egg-info
+*.pt
+*.tar.gz
+*.npy
+build
+results*
+.vscode
+.DS_Store
+PF-dataset-PASCAL
+SPair-71k
+TSS_CVPR2016
