@@ -479,6 +479,8 @@ def main(args):
         DIST = "cos"
     if args.DIST != "cos" and args.DIST != "l2":
         DIST = args.DIST
+    if PASCAL:
+        SAMPLE = 0
 
     np.random.seed(args.SEED)
     torch.manual_seed(args.SEED)

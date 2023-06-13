@@ -166,7 +166,7 @@ def build_demo_classes_and_metadata(vocab, label_list):
 import sys
 
 
-def load_model(config_path="Panoptic/odise_label_coco_50e.py", seed=42, diffusion_ver="v1-3", image_size=1024, num_timesteps=0, block_indices=(2,5,8,11), decoder_only=False, encoder_only=False, resblock_only=False):
+def load_model(config_path="Panoptic/odise_label_coco_50e.py", seed=42, diffusion_ver="v1-3", image_size=1024, num_timesteps=0, block_indices=(2,5,8,11), decoder_only=True, encoder_only=False, resblock_only=False):
     cfg = model_zoo.get_config(config_path, trained=True)
 
     cfg.model.backbone.feature_extractor.init_checkpoint = "sd://"+diffusion_ver

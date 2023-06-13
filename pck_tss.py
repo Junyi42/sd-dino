@@ -231,7 +231,7 @@ def compute_flow(model, aug, source_img, target_img, save_path, batch_num=0, cat
                     img1_desc_dino = img1_desc_dino / img1_desc_dino.norm(dim=-1, keepdim=True)
                     img2_desc_dino = img2_desc_dino / img2_desc_dino.norm(dim=-1, keepdim=True)
 
-            if not ONLY_DINO:
+            if FUSE_DINO and not ONLY_DINO:
                 # cat two features together
                 img1_desc = torch.cat((img1_desc, img1_desc_dino), dim=-1)
                 img2_desc = torch.cat((img2_desc, img2_desc_dino), dim=-1)
