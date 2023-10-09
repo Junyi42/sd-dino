@@ -12,7 +12,7 @@ This repository is the official implementation of the paper:
 [*Varun Jampani*](https://varunjampani.github.io/),
 [*Deqing Sun*](https://deqings.github.io/),
 [*Ming-Hsuan Yang*](https://faculty.ucmerced.edu/mhyang/)
-arXiv preprint, 2023.
+NeurIPS, 2023.
 
 ![teaser](assets/teaser.png)
 
